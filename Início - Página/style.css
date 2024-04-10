@@ -119,6 +119,8 @@ body {
     border-radius: 4px;
     margin-right: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 .form .search img {

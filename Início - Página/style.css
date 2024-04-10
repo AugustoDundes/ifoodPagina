@@ -194,6 +194,7 @@ body {
     border-top: 1px solid #dcdcdc;
     margin-top: 20px;
     padding: 20px 0;
+    border-bottom: 1px solid #dcdcdc;
 }
 .imagens img {
     width: 100%;
@@ -203,6 +204,42 @@ body {
 }
 .imagens img:hover {
     transform: scale(1.02);
+}
+
+.semifinal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagemPessoas{
+    margin-right: 120px;
+}
+
+.foodlover{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    width: 100%;
+    margin-left: 100px;
+
+}
+
+.foodlover h4{
+    color: #777777;
+}
+
+.foodlover a{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 15px 15px; 
+    margin-right: 75px;
+    border-radius: 5px;
+    font-weight: 500;
 }
 
 .subBanners{

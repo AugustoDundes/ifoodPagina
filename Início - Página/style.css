@@ -11,30 +11,32 @@ body {
     width: 100%;
     height: 100%;
 }
-.hero {
+.primeiraParte {
     height: 80%;
     max-height: 520px;
     background: #f5f3f4;
 }
-.header {
+.head {
     display: flex;
     position: fixed;
     background-color: #f7f7f7;
+    background-position-x: center;
     justify-content: flex-end;
     margin-left: -200px;
     width: 100%;
     z-index: 2;
 }
-.header ul {
+
+.head ul {
     display: flex;
     align-items: center;
 }
-.header ul li {
+.head ul li {
     list-style: none;
     margin: 0 40px;
     color: #3e3e3e;
 }
-.header ul li a {
+.head ul li a {
     text-decoration: none;
     color: #3e3e3e;
 }
@@ -51,7 +53,8 @@ body {
 #conta{
     color: red;
 }
-.bg {
+.background {
+    z-index: 0;
     display: flex;
     height: 100%;
     padding-bottom: 20px;
@@ -106,6 +109,7 @@ body {
     width: 100%;
     max-width: 780px;
     display: flex;
+    z-index: 1;
 }
 .form .search {
     width: 100%;
@@ -132,16 +136,23 @@ body {
     font-weight: 400;
     color: #a6a6a6;
 }
-.form button {
+.form a {
     width: 210px;
     background: #ea1d2c;
     color: #fff;
     font-weight: 400;
     border: 0;
     border-radius: 4px;
+    font: arial 12;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tags {
     margin: 30px 0;
+    display: flex;
+    justify-content: center;
 }
 .tags span {
     font-size: 0.875rem;
@@ -152,32 +163,40 @@ body {
     border-radius: 10px;
     margin: 6px;
 }
-.banner {
+
+#categoria{
+    text-decoration:none;
+}
+
+.imagens {
     display: flex;
     justify-content: center;
     padding: 20px;
+    border-top: 1px solid #dcdcdc;
+    margin-top: 20px;
+    padding: 20px 0;
 }
-.banner img {
+.imagens img {
     width: 100%;
     max-width: 390px;
     margin: 0 10px;
     transition: 0.2s;
 }
-.banner img:hover {
+.imagens img:hover {
     transform: scale(1.02);
 }
-.footer {
+.final {
     margin: 20px;
     border-top: 1px solid #dcdcdc;
     display: flex;
     padding: 20px 0;
 }
-.footer img {
+.final img {
     width: 50px;
     margin: 0 30px;
     margin-bottom: 20px;
 }
-.footer span {
+.final span {
     font-size: 0.75rem;
     color: #818181;
     margin: 0 40px;

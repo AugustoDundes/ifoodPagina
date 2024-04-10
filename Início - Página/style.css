@@ -152,7 +152,7 @@ body {
 .tags {
     margin: 30px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .tags span {
     font-size: 0.875rem;
@@ -167,6 +167,25 @@ body {
 #categoria{
     text-decoration:none;
 }
+
+.banners{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding: 20px 0;
+}
+.banners img{
+    width: 100%;
+    max-width: 390px;
+    margin: 0 10px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.banners img:hover{
+    transform: scale(1.02);
+}
+
 
 .imagens {
     display: flex;
@@ -185,6 +204,22 @@ body {
 .imagens img:hover {
     transform: scale(1.02);
 }
+
+.subBanners{
+    margin-left: 170px;
+    margin-right: 170px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.subBanners img{
+    transition: 0.2s;
+}
+
+.subBanners img:hover{
+    transform: scale(1.02);
+}
+
 .final {
     margin: 20px;
     border-top: 1px solid #dcdcdc;

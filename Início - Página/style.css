@@ -22,9 +22,11 @@ body {
     background-color: #f7f7f7;
     background-position-x: center;
     justify-content: flex-end;
-    margin-left: -200px;
+    margin-left: 0px;
     width: 100%;
     z-index: 2;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .head ul {
@@ -35,7 +37,10 @@ body {
     list-style: none;
     margin: 0 40px;
     color: #3e3e3e;
+    margin-right: 150px;
 }
+
+
 .head ul li a {
     text-decoration: none;
     color: #3e3e3e;
@@ -111,6 +116,10 @@ body {
     display: flex;
     z-index: 1;
 }
+
+.form a{
+    font-size: 12px;
+}
 .form .search {
     width: 100%;
     max-width: 650px;
@@ -121,6 +130,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 .form .search img {

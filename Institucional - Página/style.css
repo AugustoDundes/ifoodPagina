@@ -1,115 +1,126 @@
-* {
-    box-sizing:border-box;
-}
 body {
     height: 100vh;
     margin: 0 auto;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
 }
+
 .container {
     width: 100%;
     height: 100%;
 }
-.container div{
 
-}
 .grupo1 {
     height: 95%;
-    background: #eb0033;
-    
+    background: #eb0033; 
 }
+
 .head {
     display: flex;
     justify-content: center;
     margin: 0 45px;
 }
+
 .logo {
-    position: absolute;
-    width: 80px;
-    height: 40px;
-    left: 170px;
+    max-width: 80px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
 }
+
 .head ul {
     display: flex;
     align-items: center;
 }
+
 .head ul li {
     list-style: none;
     margin: 0 25px;
     font-size: 18px;
     border-bottom: 2px solid transparent;
-    transition:  border-color 0.3s ease;
     position: relative;
     overflow: hidden;
 }
+
 .head ul li::after {
-    content: ''; /* Cria o pseudoelemento */
-    position: absolute; /* Posiciona o pseudoelemento */
-    bottom: 0; /* Alinha o pseudoelemento na parte inferior */
-    left: 100%; /* Inicia o pseudoelemento fora do item da lista */
-    width: 100%; /* Largura inicial do pseudoelemento */
-    height: 2px; /* Altura da borda */
-    background-color: #fff; /* Cor da borda */
-    transition: left 0.3s ease; /* Efeito de transição suave */
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 100%; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #fff;
 }
+
 .head ul li:hover::after {
     left: 0;
 }
+
 .head ul li a {
     text-decoration: none;
     color: #fff;
 }
+
 .head ul li:last-child {
     background: #fff;
     padding: 15px 25px; 
     margin: 0 0 0 25px;
     border-radius: 5px;
+    width: 125px;
     border: none;
     font-weight: 500;
     color: #eb0033;
 }
+
 .head ul li:last-child:hover {
     background: #fdd7d9;
 }
+
 .text {
     display: flex;
-    height: 100%;
-    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 85%;
+    text-align: left;
+
 }
+
+.esquerda{
+    padding: 50px;
+}
+
 .esquerda h1{
-    position: absolute;
-    width: 600px;
-    top: 100px;
-    left: 170px;
     color: #fff;
     font-size: 50px;
+    max-width: 600px;
+    width: 100%;
 }
+
 .esquerda p{
-    position: absolute;
-    top: 300px;
-    left: 170px;
     color: #fff;
     font-size: 19.5px;
     line-height: 1.75rem;
+    max-width: 600px;
+    width: 100%;
 }
+
 .esquerda h2{
-    position: absolute;
     background: #fff;
-    padding: 15px 25px; 
-    margin: 0 0 0 25px;
+    padding: 15px 25px;
+    margin-top: 120px; 
     border-radius: 5px;
     border: none;
     font-weight: 500;
     color: #eb0033;
     font-size: 18px;
-    left: 147px;
-    top: 485px;
+    max-width: 280px;
+    width: 100%;
 }
+
 .esquerda h2:hover{
     background: #fdd7d9;
 }
-
 
 .esquerda2{
     margin-left: 250px;
@@ -118,12 +129,7 @@ body {
 .direita{
     display: flex;
 }
-.direita img{
-    position: relative;
-    width: 500px;
-    height: 450px;
-    left: 700px;
-}
+
 
 
 .grupo2 {
@@ -139,15 +145,15 @@ body {
     top: 50px;
 }
 .esquerda2 p{
-    left: 170px;
-    top: 730px;
+    max-width: 600px;
+    width: 100%;
+    margin-right: 50px;
     font-size: 19.5px;
     line-height: 1.75rem;
 }
 .esquerda2 h2{
     background: #eb0033;
     padding: 15px 25px; 
-    margin: 0 0 0 25px;
     border-radius: 5px;
     border: none;
     font-weight: 500;
@@ -162,11 +168,8 @@ body {
     background: #db5d6a;
 }
 .direita2 img{
-    width: 500px;
-    height: 400px;
-    left: 700px;
-    top: 625px;
     margin-top: 50px;
+    border-radius: 20px;
 }
 .group3 {
     height: 75%;
@@ -181,31 +184,30 @@ body {
 }
 
 .esquerda3 img{
-    left: 163px;
+    margin-top: 50px;
+    border-radius: 20px;
 }
 .direita3 h1{
     color: #eb0033;
-    left: 725px;
     font-size: 35px;
     width: 600px; 
-    top: -315px; 
     
 }
 
 .botao{
     text-decoration: none;
+    color: white;
 }
 
 .direita3 p{
-    left: 725px;
-    top: 1275px;
+    max-width: 600px;
+    width: 100%;
     font-size: 19.5px;
     line-height: 1.75rem;
 }
 .direita3 h2{
     background: #eb0033;
     padding: 15px 25px; 
-    margin: 0 0 0 25px;
     border-radius: 5px;
     border: none;
     font-weight: 500;
@@ -213,13 +215,19 @@ body {
     font-size: 18px;
     left: 700px;
     top: 1500px;
-    max-width: 300px;
+    max-width: 320px;
     width: 100%;
 }
+
+.direita3 h2:hover{
+    background: #db5d6a;
+}
+
 .group4 {
     height: 123%;
     background: #f5f3f4;
 }
+
 .text_news{
     width: 100%;
     display: flex;
@@ -227,14 +235,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .text_news p{
-    position: relative;
-    top: 50px;
+    margin-top: 120px;
 }
+
 .text_news h1{
-    position: relative;
     top: 35px;
 }
+
 .news{
     display: flex;
     flex-direction: row;
@@ -242,38 +251,44 @@ body {
     align-items: center;
     gap: 10px;
 }
+
 .news1{
-    position: relative;
-    top: 65px;
+    text-align: center;
+    margin-top: 50px;
     width: 350px; 
     height: 350px; 
-    background-color: #fff;
+    background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px #00000033;
 }
 .news1 h3{
-    position: relative;
+    text-align: center;
+    margin-top: 50px;
     width: 300px;
     top: 135px;
     left: 30px;
 }
 .news1 p{
-    position: relative;
+    text-align: center;
+    margin-top: 50px;
     width: 300px;
     left: 30px;
     top: 140px;
     font-size: 13.5px;
 }
 .news1 h5{
-    position: relative;
+    text-align: center;
+    margin-top: 50px;
     width: 300px;
     left: 30px;
     top: 155px;
     font-size: 12.5px;
     color: #b9b9b9;
+    border-top: gray;
 }
 .news2{
-    position: relative;
+    text-align: center;
+    margin-top: 50px;
     top: 65px;
     width: 350px; 
     height: 350px; 
@@ -282,20 +297,23 @@ body {
     box-shadow: 0 0 10px #00000033;
 }
 .news2 h3{
-    position: relative;
+    text-align: center;
+    margin-top: 50px;
     width: 300px;
     top: 135px;
     left: 30px;
 }
 .news2 p{
-    position: relative;
+    text-align: center;
+    margin-top: 50px;
     width: 300px;
     left: 30px;
     top: 140px;
     font-size: 13.5px;
 }
 .news2 h5{
-    position: relative;
+    text-align: center;
+    margin-top: 50px;
     width: 300px;
     left: 30px;
     top: 140px;
@@ -303,7 +321,8 @@ body {
     color: #b9b9b9;
 }
 .news3{
-    position: relative;
+    text-align: center;
+    margin-top: 50px;
     top: 65px;
     width: 350px; 
     height: 350px; 
@@ -312,20 +331,23 @@ body {
     box-shadow: 0 0 10px #00000033;
 }
 .news3 h3{
-    position: relative;
+    text-align: center;
+    margin-top: 50px;
     width: 300px;
     top: 135px;
     left: 30px;
 }
 .news3 p{
-    position: relative;
+    text-align: center;
+    margin-top: 50px;
     width: 300px;
     left: 30px;
     top: 140px;
     font-size: 13.5px;
 }
 .news3 h5{
-    position: relative;
+    margin-top: 50px;
+    text-align: center;
     width: 300px;
     left: 30px;
     top: 140px;
@@ -333,7 +355,6 @@ body {
     color: #b9b9b9;
 }
 .acesse{
-    position: absolute;
     background: #eb0033;
     padding: 0px 25px; 
     margin: 0 0 0 25px;
@@ -342,11 +363,18 @@ body {
     font-weight: 300;
     color: #fff;
     font-size: 13px;
-    direita: 139.5px;
-    top: 2225px;
+    max-width: 300px;
+    width: 100%;
+    justify-content: flex-end;
+    align-content: flex-end;
 }
+
+.acesse h2:hover{
+    background: #db5d6a;
+}
+
 .group5{
-    height: 95%;
+    height: 65%;
     background: #eb0033;
 }
 .infos{
@@ -366,11 +394,14 @@ body {
     text-decoration: none;
     font-size: 18px;
 }
+
+.sobre{
+    margin-top: 50px;
+}
+
 .sobre a{
     color: #fff;
     line-height: 2.0rem;
-    position: relative;
-    top: 82px;
 }
 .comunidade a{
     color: #fff;
@@ -397,19 +428,23 @@ body {
     top: 37px;
 }
 .footer{
-    height: 15%;
+    height: 10%;
     background: #890019;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 .footer img{
-    position: relative;
-    width: 60px;
-    left: 190px;
-    top: 35px;
+    max-width: 60px;
+    width: 100%;
+    max-height: 35px;
+    height: 100%;
 }
 .footer span{
-    position: relative;
     font-size: 0.825rem;
     color: #fff;
     left: 300px;
     top: 15px;
+    margin-left: 360px;
 }
